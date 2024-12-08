@@ -1,0 +1,31 @@
+body{
+    background: #555;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 800px;
+    width: 500px;
+    color: #222;
+    position: relative;
+}
+
+.clip{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.clip1{
+    background-image: url("D:\Project_W\html-css-js-project-2\Images\1.jpg");
+    background-size: cover;
+    background-position: center;
+}
