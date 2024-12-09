@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+}
+
+
+a{
+  text-decoration: none;
+  position: absolute;
+  font-size: 20px;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  background: #fff;
+ color: #000;
+ border-radius: 100px;
+ transition: all 1s;
+}
+
+a:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: antiquewhite;
+    transition: all 1s;
+    z-index: -1;
+}
+
+a:hover:before{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+a:hover{
+    transform: translate(-3px);
+    box-shadow: 0 10px 20px rgb(0,0,0,0.2);
+}
+a:active{
+    transform: translate(-1px);
+    box-shadow: 0 5px 10px rgb(0,0,0,0.2);
+}
