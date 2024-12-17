@@ -1,0 +1,1 @@
+const grayHeart=document.querySelector('.gray-heart')?.innerHTML="This is gray heart";
