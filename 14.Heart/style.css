@@ -83,7 +83,7 @@ body{
 .red-heart.animation{
     animation: pop 0.9s linear;
 }
-.heart.fill-color{
+.red-heart.fill-color{
     background: var(--main-color);
     visibility: visible;
 }

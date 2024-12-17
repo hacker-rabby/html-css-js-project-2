@@ -136,8 +136,21 @@
         <div class="progress">
 
         </div>
-     </div>    
+     </div> 
+     
+     <script>
+        let indicator = document.querySelectorAll("scrollbar-indicator progress") 
+let scrollHeight = document.documentElement.scrollHeight-document.documentElement.clientHeight;
 
-    <script src="app.js"></script>
+
+window.addEventListener("scroll",scroll);
+function scroll(){
+    let scrollTop=document.documentElement.scrollTop 
+    let scrolled=(scrollTop/scrollHeight)*100;
+    indicator.style.width=`${scrolled}%`
+}
+     </script>
+
+    <!-- <script src="app.js"></script> -->
 </body>
 </html>

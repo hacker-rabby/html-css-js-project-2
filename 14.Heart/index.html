@@ -11,13 +11,25 @@
     <div class="gray-heart"></div>
     <div class="red-heart"></div>
 
-  <p id="para"></p>
 
     <!-- <script>
        const grayHeart=document.querySelector('.gray-heart').innerHTML="this is gray heart";
        console.log(grayHeart);
     </script> -->
-    <script src="app2.js"></script>
+    <script>
+        const grayHeart=document.querySelector('.gray-heart');
+        const redHeart=document.querySelector('.red-heart')
+
+        grayHeart.addEventListener("click",()=>{
+            redHeart.classList.add("animation");
+            redHeart.classList.add("fill-color");
+        })
+
+        redHeart.addEventListener("click",()=>{
+            redHeart.classList.remove("animation");
+            redHeart.classList.remove("fill-color")
+        })
+    </script> 
    
 </body>
 </html>
