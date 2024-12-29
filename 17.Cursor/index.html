@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="container">
+        <h1>Cursor Project</h1>
+        <p>Lattice seat bird tossed never thy balm wretch came plainly. Wondering door shorn wretch bleak was myself no. He my.
+
+        </p>
+        <button>Learn More</button>
+    </div>
+
+
+
+
+   <script>
+    const cursor=document.querySelector(".cursor");
+
+
+document.addEventListener("mousemove", function(event){
+    moveCursor(event.pageX,event.pageY);
+});
+
+const moveCursor = function (pageX,pageY){
+    if(cursor)
+    {
+        cursor.style.left=pageX + "px";
+        cursor.style.top=pageY + "px";
+    }
+}
+   </script>
+</body>
+</html>
